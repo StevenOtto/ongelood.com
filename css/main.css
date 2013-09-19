@@ -21,6 +21,12 @@ textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+	
 }
 
 /*
@@ -98,26 +104,103 @@ textarea {
    ========================================================================== */
 
 .centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -82px;
-  margin-left: -177px;
+  margin:  0 auto;
+}
+
+.logo {
+	margin-top:  7.5em;
+	width: 9em;
 }
 
 .header-wrap {
 	top:  0;
 	left:  0;
 	width:  100%;
-	height:  100%;
-	position:  absolute;
-	background: url(../img/header.jpg) no-repeat center center;
+	height:  37.4375em;
+	position:  fixed;
+	background: url(../img/header.jpg) center center no-repeat;
 	background-size: cover;
 	text-align: center;
+	z-index: -10;
+}
+
+.overlay {
+	background:  rgba(57,61,68,.8);
+	height:  100%;
+}
+
+.intro-wrap {
+	width:  100%;
+	margin-top:  37.4375em;
+	background:  #fff;
+}
+
+.quote {
+	width:  20em;
+	margin: 0 auto;
+}
+
+.team-wrap {
+	width:  100%;
+	background-color:  #eceef1;	
+}
+
+.team-wrap-wrap {
+	padding: 8em 0em;
+}
+
+.title {
+	width:  7em;
+	margin:  0 auto;
 }
 
 
+.team-photos {
+	max-width: 56.25em;
+	margin:  0 auto;
+}
 
+.single-photo {
+/*	float:  left;*/
+	width:  12.5em;
+	margin:  1em auto;
+	display: block;
+}
+
+.bold {
+	font-weight:  700;
+	font-size:  1.25em;
+	margin:  	0.5em 0em 0.1em 0em;
+}
+
+h2 {
+	font-weight:  900;
+	text-transform: uppercase;
+	text-align: center;
+	margin:  0em;
+	color:  #323a44;
+}
+
+h3 {
+	font-weight: 400;
+	font-size:  1.375em;
+	line-height:  2em;
+	color:  #9ea7b2;
+	text-align: center;
+	padding:  3em 0;
+	margin:  0em;
+}
+
+p {
+	margin:  0em;
+	color:  #484f58;
+}
+
+.line {
+	margin:  0em;
+	height: 1px;
+	border-top: 2px solid #323a44;
+}
 
 
 /* ==========================================================================
@@ -229,6 +312,29 @@ textarea {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    .quote {
+    	width:  50.625em;
+    	padding:  0em 2em 0em 2em;
+    }
+    
+    .single-photo {
+    	float:  left;
+    	margin-right:  2em;
+    }
+    
+    .team-photos {
+    	margin-top:  5em;
+    }
+    
+    .last {
+    	margin-right: 0em;
+    }
+    
+    .logo {
+    	width: 11.125em;	
+    }
+    
+    
 }
 
 @media print,
